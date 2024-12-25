@@ -2,10 +2,23 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center;
 }
 
 h1 {
     color: #0077cc;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
 }
 
 button {
@@ -15,6 +28,27 @@ button {
     border: none;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #45a049;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    width: 45%;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
 }
